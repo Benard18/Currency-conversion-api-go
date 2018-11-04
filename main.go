@@ -15,7 +15,7 @@ type Response struct{
 }
 
 func main() {
-	response, err := http.Get("https://bankersalgo.com/apirates2/5bded30ac7ad0/236930aa9daf69ab232db85a1d42c609/EUR")
+	response, err := http.Get("https://bankersalgo.com/apirates2/<apikey>/<secretkey>/EUR")
 	if err != nil {
 		fmt.Printf("The HTTP request failed with error %s\n", err)
 	} else {
